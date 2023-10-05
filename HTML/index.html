@@ -1,0 +1,1926 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Plant-Palace</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-------font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fav icon link -->
+    <link rel="icon" href="../Images/logo-img-transparent.png" type="images/png">
+
+    <!---------------Animation on Scroll (AOS) cdn  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    
+
+</head>
+
+<body>
+    <!----------------Navbar starts  -->
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand d-flex justify-content-between align-items-center ps-5">
+                    <img src="../Images/logo-img-transparent.png" width="60px" height="60px" class="fluid-img" alt="">
+                    <h1 class="text-uppercase  fw-bold fs-3 ms-2">Plant-palace</h1>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item p-2">
+                            <a href="#header" class="nav-link text-uppercase text-dark fw-bold">HOME</a>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <a href="#services" class="nav-link text-uppercase text-dark fw-bold">SERVICES</a>
+                        </li>
+                        <li class="nav-item dropdown my-auto">
+                            <a href="#"
+                                class="dropdown-toggle text-uppercase text-dark text-decoration-none pt-3 fw-bold"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">CATEGORIES</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#categories" class="dropdown-item fw-bold">Indoor-Plant</a></li>
+                                <li><a href="#categories" class="dropdown-item fw-bold">Outdoor Plant</a></li>
+                                <li><a href="#categories" class="dropdown-item fw-bold">Flowering</a></li>
+                                <li><a href="#categories" class="dropdown-item fw-bold">Succulent plant</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <a href="#about" class="nav-link text-uppercase text-dark fw-bold">ABOUT</a>
+                        </li>
+                        <li class="nav-item px-2 py-2 border-0">
+                            <a href="#Feedback" class="nav-link text-uppercase text-dark fw-bold">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="icon-btn">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#login">
+                        <!-- <i class="fa fa-login border-0" ></i> -->
+                        <span>logIn</span>
+                    </button>
+                    <!-- Modal -->
+
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#signup">
+                        <span>SignUp</span>
+                    </button>
+
+                    <!-- <button type="button" class="position-relative">
+                        <i class="fa fa-search  border-0"></i>
+                    </button> -->
+                </div>
+                <!-- <div>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div> -->
+            </div>
+
+        </nav>
+    
+
+    <!---------------------Navbar Ends -->
+    <!---------------------background picture  -->
+    <div id="header" class="container-fluid px-0" data-aos="zoom-out">
+        <div class="bg-img d-block w-100" style="box-shadow: 5px 1px 9px 1px black
+    ">
+            <div class="row text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
+                    <div class="container bg-dis text-start mt-5">
+                        <h1 class="text-success text-uppercase fw-bolder">Plant-palace</h1>
+                        <p class="text-light text-lead">Welcome to our online plant nursery, where nature's beauty meets
+                            convenience</p>
+                        <p class="text-light text-lead">Explore our diverse collection of healthy and vibrant plants</p>
+                        <a href="#categories" type="button" class="btn btn-success mt-2 fw-bold">View
+                            Category</a>
+                        
+                            <div id="newsletter" class="row mt-2">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                
+                                    <div class="input-group mb-3 mt-3">
+                                        <input id="search" type="text" class="form-control" placeholder="Enter Your Product Name">
+                                        <button onclick="searchplant()" class="btn btn-primay text-light" type="submit">Search</button>
+                                    </div>
+                                
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------background picture  -->
+
+    <!-- ------------------ catergory starts  -->
+    <section id="categories" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block text-uppercase">Categories</h2>
+            </div>
+
+            <div class="row">
+                <div class="d-flex flex-wrap justify-content-center mt-5" data-aos="zoom-in-up">
+                    <button type="button" class="btn text-light  m-2 " id="all">All</button>
+                    <button type="button" class="btn text-light bg-success m-2   text-uppecase" id="i-plant">
+                        Indoor plant
+                    </button>
+                    <button type="button" class="btn text-light bg-success m-2  text-uppecase" id="o-plant">
+                        Outdoor plant
+                    </button>
+                    <button type="button" class="btn text-light bg-success m-2  text-uppecase" id="flowring">
+                        flowering
+                    </button>
+                    <button type="button" class="btn text-light bg-success m-2  text-uppecase" id="succulent">
+                        Succulent plant
+                    </button>
+                </div>
+            </div>
+
+            <section id="indoorplants">
+            <div class="row" id="indoor-box">
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/bonsai.jpg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p  class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Bonsai</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Category: <b>Indoor Plant</b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name:<b> Ulmus</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                        class="fw-bold">$20</span></p>
+
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#indoor-1">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="indoor-1" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Bonsai</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/bonsai.jpg" class="w-100" height="300px" alt="">
+                                                    <p class="mt-3 lead" id="Description">
+                                                      
+
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Light
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        High light</li>
+                                                    <li>Watering
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Low watering</li>
+                                                    <li>Humidity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Higher humidity</li>
+                                                    <li>Temperature&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Medium temperature</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/flowering.jpg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>flower </b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Category: <b>Indoor-plant </b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name:<b> Mirabilas
+                                            jalapa</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$35</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#indoor-2">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="indoor-2" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">flower</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/flowering.jpg" class="w-100" height="400px"
+                                                        alt="">
+                                                    <p class="mt-3 lead">
+                                                        A flower is the bloom or blossom of a plant. The flower is the
+                                                        part of a plant that produces seeds, which in time become other
+                                                        flowers. This is thanks to a process called pollination that is
+                                                        carried out either by insects or the wind. Every type of flower
+                                                        is different, in color, smell, shape and size.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Light &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lower light</li>
+                                                    <li>Watering &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp; &nbsp; &nbsp; Water regularly</li>
+                                                    <li>Humidity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp; &nbsp; &nbsp; Higher humidity</li>
+                                                    <li>Temperature &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp; Room temperature</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/cactus.jpg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b> cactus</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Category:<b> Indoor-plant </b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name <b>Cactaceae
+                                        </b> <br><br></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: 
+                                        <span
+                                            class="fw-bold">$17</span><br></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#indoor-3">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="indoor-3" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Cactus</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/cactus.jpg" class="w-100" height="300px" alt="">
+                                                    <p class="mt-3 lead">
+                                                        We can define cactus as a type of plant that grows in hot, dry
+                                                        areas such as deserts. The stem of a cactus plant is very thick
+                                                        and it has sharp points which are like needles. The plant does
+                                                        not have leaves. A cactus is a thick fleshy plant that grows in
+                                                        different parts of the world.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Light
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp; Bright sunlight</li>
+                                                    <li>Watering&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Water sparingly</li>
+                                                    <li>Humidity
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Low humidity</li>
+                                                    <li>Temperature &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Room
+                                                        temperature</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/palm.jpg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name:<b>Palm</b> </p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Category: <b>Indoor-plant</b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name:
+                                        <b>Arecaceae</b><br><br>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$20</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#indoor-4">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="indoor-4" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Palm</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/palm.jpg" class="w-100" height="300px" alt="">
+                                                    <p class="mt-3 lead">
+                                                        Palm plants, iconic in tropical regions, feature a tall single
+                                                        stem, large fan or feather-like leaves. They evoke images of
+                                                        paradisiacal settings and are valued for their diversity and
+                                                        resilience.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Light
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Indirect light</li>
+                                                    <li>Watering
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Water regularly </li>
+                                                    <li>Humidity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Higher humidity</li>
+                                                    <li>Temperature
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room
+                                                        temperature</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="floweringplants">
+            <div class="row" id="flowring-box">
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/rose.jpg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name:<b>Rose</b> </p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">category: <b>Flowering
+                                            shurb</b></p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: <b>Rosa</b><br><br>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$5</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#flower-1">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="flower-1" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Rose</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/rose.jpg" class="w-100" height="300px" alt="">
+                                                    <p class="mt-3 lead">
+                                                        Roses, iconic symbols of love and beauty, are flowering shrubs
+                                                        with thorny stems and fragrant blooms in various colors. They
+                                                        thrive in well-draining soil and sunlight, requiring regular
+                                                        watering, pruning, and care. From classic garden roses to modern
+                                                        hybrids, they add elegance to landscapes and bouquets.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6
+                                                        hours direct sunlight each day</li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Organic soil</li>
+                                                    <li>Mulching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Retain
+                                                        moisture, suppress weeds, and regulate</li>
+                                                    <li>Fertilizing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Low
+                                                        fertilizing</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/mountain-laurel.jpg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Mountain-laurel</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">category:<b>Flowering
+                                            Shurb</b> </p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: <b>Kalmia
+                                            latifolia</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$15</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#flower-2">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="flower-2" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Mountain-Laurel</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/mountain-laurel.jpg" class="w-100"
+                                                        height="300px" alt="">
+                                                    <p class="mt-3 lead">
+                                                        Kalmia latifolia, the mountain laurel, calico-bush, or
+                                                        spoonwood, is a species of flowering plant in the heath family
+                                                        Ericaceae, that is native to the eastern United States. Its
+                                                        range stretches from southern Maine south to northern Florida,
+                                                        and west to Indiana and Louisiana.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Low
+                                                        sunlight</li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Organic soil</li>
+                                                    <li>Mulching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moisture
+                                                        accumulation and potential diseases</li>
+                                                    <li>Fertilizing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Slow-release fertilizer</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/azalae.jpg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Azalae</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">category: <b>Flowering
+                                            shurb</b></p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name:
+                                        <b>Rhododendron</b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$37</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#flower-3">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="flower-3" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Azalae</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/azalae.jpg" class="w-100" height="300px" alt="">
+                                                    <p class="mt-3 lead">
+                                                        Azalea, certain species of Rhododendron of the heath family
+                                                        (Ericaceae), formerly placed in the genus Azalea. Many azaleas
+                                                        are grown as ornamentals for their showy flowers, and most of
+                                                        the cultivated varieties have been bred from species that are
+                                                        native to the hilly regions of Asia and North America.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Indirect sunlight</li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Acidic soil</li>
+                                                    <li>Mulching&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Avoid Over-mulching</li>
+                                                    <li>Fertilizing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        water-soluble fertilizer</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/hibiscus.jpg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Hibiscus</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Category: <b>Flowering
+                                            shrub</b></p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: <b> Hibiscus
+                                            </b><br><br></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$14</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#flower-4">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="flower-4" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Hibiscus</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/hibiscus.jpg" class="w-100" height="300px"
+                                                        alt="">
+                                                    <p class="mt-3 lead">
+                                                        Hibiscus rosa-sinensis, known colloquially as Chinese hibiscus,
+                                                        China rose, Hawaiian hibiscus, rose mallow and shoeblack plant,
+                                                        is a species of tropical hibiscus, a flowering plant in the
+                                                        Hibisceae tribe of the family Malvaceae.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Several hours of sunlight each day.</li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Soil pH use</li>
+                                                    <li>Mulching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moisture,
+                                                        suppress weeds, and improve soil </li>
+                                                    <li>Fertilizing
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2-4 weeks
+                                                        fertilizing</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="outdoorplants">
+            <div class="row" id="outdoor-box">
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/Canary Island date palm.jpeg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b> Canary Island palm</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">category: <b>Outdoor-plant</b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: <b>Phoenix
+                                            </b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$30</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#outdoor-1">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="outdoor-1" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Canary Island palm</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/Canary Island date palm.jpeg" class="w-100"
+                                                        height="300px" alt="">
+                                                    <p class="mt-3 lead">
+                                                        It is a longed lived evergreen perennial tree with blooms in
+                                                        spring or early summer, followed by orange date-like, ornamental
+                                                        fruits in summer and fall. This impressive tree is too large for
+                                                        most residential landscapes, having leaves up to 15 feet long
+                                                        and heavily armed petioles
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Bright sunlight</li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Well-draining soil</li>
+                                                    <li>Mulching&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Moisture and regulate soil temperature.</li>
+                                                    <li>Fertilizing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Growing season fertilizing</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/Chamaerops humilis.jpeg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Chamaerops humilis</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">category: <b>Outdoor-plant</b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: <b>Chamaerops
+                                            </b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$50</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#outdoor-2">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="outdoor-2" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Chamaerops humilis</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/Chamaerops humilis.jpeg" class="w-100"
+                                                        height="300px" alt="">
+                                                    <p class="mt-3 lead">
+                                                        Chamaerops is a genus of flowering plants in the family
+                                                        Arecaceae. It contains only one species, Chamaerops humilis,
+                                                        variously called European fan palm or the Mediterranean dwarf
+                                                        palm. It is one of the most cold-hardy palms and is used in
+                                                        landscaping in temperate climates.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Low sunlight</li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Regular potting soil</li>
+                                                    <li>Mulching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moisture
+                                                        retention and soil temperature </li>
+                                                    <li>Fertilizing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        4-6 weeks fertilizing</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/Olive Tree.jpeg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Olive Tree</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">category: <b>Outdoor-plant</b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: <b>Olea
+                                            </b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$100</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#outdoor-3">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="outdoor-3" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Olive Tree</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/Olive Tree.jpeg" class="w-100" height="300px"
+                                                        alt="">
+                                                    <p class="mt-3 lead">
+                                                        The olive, botanical name Olea europaea, meaning 'European
+                                                        olive', is a species of small tree or shrub in the family
+                                                        Oleaceae, found traditionally in the Mediterranean Basin. When
+                                                        in shrub form, it is known as Olea europaea 'Montra', dwarf
+                                                        olive, or little olive
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6-8 Hours of
+                                                        sunlight each day</li>
+                                                    <li>Soil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Regular potting soil</li>
+                                                    <li>Mulching &nbsp;&nbsp;&nbsp; Retain moisture, suppress weeds, and
+                                                        improve soil </li>
+                                                    <li>Fertilizing&nbsp;&nbsp;&nbsp; 4-6 weeks fertilizing</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/Fatsia Japonica.jpeg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Paperplant</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Category: <b>Outdoor-plant</b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: <b> Fatsia
+                                            </b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$74</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#outdoor-4">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="outdoor-4" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Fatsia Japonica</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/Fatsia Japonica.jpeg" class="w-100"
+                                                        height="300px" alt="">
+                                                    <p class="mt-3 lead">
+                                                        Fatsia japonica, also fatsi, paperplant, false castor oil plant,
+                                                        or Japanese aralia, is a species of flowering plant in the
+                                                        family Araliaceae, native to southern Japan and southern Korea.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Bright light </li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Regular potting soil with perlite </li>
+                                                    <li>Mulching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Moisture buildup and potential rot</li>
+                                                    <li>Fertilizing
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Diluted
+                                                        liquid fertilizer </li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="succulentplants">
+            <div class="row" id="succulent-box">
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/Jade Plants.jpeg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Jade Plants</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">category: <b>Succulent
+                                            plant</b></p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: Crassula 
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$12</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#succulent-4">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="succulent-4" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Jade Plants</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/Jade Plants.jpeg" class="w-100" height="300px"
+                                                        alt="">
+                                                    <p class="mt-3 lead">
+                                                        Crassula ovata, commonly known as jade plant, lucky plant, money
+                                                        plant or money tree, is a succulent plant with small pink or
+                                                        white flowers that is native to the KwaZulu-Natal and Eastern
+                                                        Cape provinces of South Africa, and Mozambique; it is common as
+                                                        a houseplant worldwide
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Indirect sunlight</li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Regular potting soi</li>
+                                                    <li>Mulching
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Avoid Over-mulching</li>
+                                                    <li>Fertilizing
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Liquid succulent fertilizer</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/Echeveria.jpeg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Echeveria</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">category: <b>Succulent
+                                            plant</b></p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name:
+                                        <b>Echeveria</b>
+                                    </p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$15</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#succulent-2">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="succulent-2" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Echeveria</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/Echeveria.jpeg" class="w-100" height="300px"
+                                                        alt="">
+                                                    <p class="mt-3 lead">
+                                                        Echeveria is a large genus of flowering plants in the family
+                                                        Crassulaceae, native to semi-desert areas of Central America,
+                                                        Mexico and northwestern South America
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indirect sunlight</li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Regular potting soil </li>
+                                                    <li>Mulching
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Non-organic mulch materials</li>
+                                                    <li>Fertilizing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        4-6 weeks fertilizing </li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/Burro Tail.jpeg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Burro Tail</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">category: <b>Succulent
+                                            plan</b>t</p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: <b>Sedum</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$16</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#succulent-3">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="succulent-3" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Burro Tail</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/Burro Tail.jpeg" class="w-100" height="300px"
+                                                        alt="">
+                                                    <p class="mt-3 lead">
+                                                        Sedum morganianum, the donkey tail or burro's tail, is a species
+                                                        of flowering plant in the family Crassulaceae, native to
+                                                        southern Mexico. It is a succulent perennial producing trailing
+                                                        stems up to 60 cm long, with fleshy blue-green leaves and
+                                                        terminal pink to red flowers in summer.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunlight
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Indirect sunlight</li>
+                                                    <li>Soil
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        Regular potting soil</li>
+                                                    <li>Mulching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moisture in
+                                                        the soil and prevent evaporation </li>
+                                                    <li>Fertilizing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Balanced liquid
+                                                        fertilizer once a month</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 p-2">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="../Images/Haworthia.jpeg" class="w-100" height="300px" alt="">
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-success">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="text-secondary">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">
+                                        name: <b>Haworthia</b></p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Category: <b>Succulent
+                                            plant</b></p>
+                                    <p class="text-capitalize my-1 text-start lead ps-2">Scientific-name: Haworthia</p>
+                                    <p class="text-capitalize my-1 text-start  lead ps-2">Price: <span
+                                            class="fw-bold">$45</span></p>
+                                    <a href="" type="button" class="btn btn-success my-3" data-bs-toggle="modal"
+                                        data-bs-target="#succulent-1">Read More</a>
+
+                                    <!-- Modal starts-->
+                                    <div class="modal fade" id="succulent-1" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title justify-content-center"
+                                                        id="exampleModalLabel">Haworthia</h2>
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body text-start">
+                                                    <img src="../Images/Haworthia.jpeg" class="w-100" height="300px"
+                                                        alt="">
+                                                    <p class="mt-3 lead">
+                                                        Haworthia is a large genus of small succulent plants endemic to
+                                                        Southern Africa . Like the aloes, they are members of the
+                                                        subfamily Asphodeloideae and they generally resemble miniature
+                                                        aloes, except in their flowers, which are distinctive in
+                                                        appearance. They are popular garden and container plants.
+                                                    </p>
+                                                    <h5 class="text-center">Safety Precautions</h5>
+                                                    <li>Sunligh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Bright indirect light</li>
+                                                    <li>Soil    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      Regular potting soil</li>
+                                                    <li>Mulching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Moisture in the soil and prevent evaporation</li>
+                                                    <li>Fertilizing  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Balanced liquid fertilizer once a month</li>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        </div>
+    </section>
+    <!-- ------------------- catergory ends  -->
+
+    <!------------services starts  -->
+    <div id="service-title" class="text-center title">
+        <h2 class="position-relative d-inline-block text-uppercase">services</h2>
+    </div>
+    <section id="services" class="py-5 mt-3">
+        <div class="container">
+        </div>
+
+        <div class="container py-3">
+            <div class="row" data-aos="zoom-in-up">
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="card p-2 text-center">
+                        <img src="../Images/service 1.jpg" width="100%" height="200px" alt="">
+                        <p class="text-capitalize my-1 fs-5 fw-bold">
+                            Plant Sales</p>
+                        <p class="text-capitalize my-1">"Explore a diverse collection of plants for sale, ranging from
+                            exotic species to popular favorites, to enhance your garden."</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="card p-2 text-center">
+                        <img src="../Images/services 4.png" width="100%" height="200px" alt="">
+                        <p class="text-capitalize my-1 fs-5 fw-bold">
+                            Community Forums</p>
+                        <p class="text-capitalize my-1">"Join our thriving gardening community forums to share insights,
+                            ask questions, and connect with fellow plant enthusiasts."</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="card p-2 text-center">
+                        <img src="../Images/service3.jpg" width="100%" height="200px" alt="">
+                        <p class="text-capitalize my-1 fs-5 fw-bold">
+                            Online Plant Care Resources</p>
+                        <p class="text-capitalize my-1">"Empower green thumb with comprehensive, guiding you to nurture
+                            your plants with confidence."</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="card p-2 text-center">
+                        <img src="../Images/service 2.webp" width="100%" height="200px" alt="">
+                        <p class="text-capitalize my-1 fs-5 fw-bold">
+                            Gardening Tips and Advice</p>
+                        <p class="text-capitalize my-1">"Discover expert gardening tips and advice to cultivate thriving
+                            plants and create a vibrant, lush garden oasis"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" data-aos="zoom-in-down">
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="card p-2 text-center">
+                        <img src="../Images/service 5.webp" width="100%" height="200px" alt="">
+                        <p class="text-capitalize my-1 fs-5 fw-bold">
+                            Plant Identification</p>
+                        <p class="text-capitalize my-1">Uncover the mystery of your plants with our plant identification
+                            service, helping you identify and learn about your botanical wonders.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="card p-2 text-center">
+                        <img src="../Images/services 6.png" width="100%" height="200px" alt="">
+                        <p class="text-capitalize my-1 fs-5 fw-bold">
+                            Indoor Plant Care & Guides</p>
+                        <p class="text-capitalize my-1">"Elevate your indoor jungle with our insightful plant care
+                            guides, ensuring indoor plants thrive and beautify your space."</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="card p-2 text-center">
+                        <img src="../Images/service 7.jpg" width="100%" height="200px" alt="">
+                        <p class="text-capitalize my-1 fs-5 fw-bold">
+                            Garden Potography&Art</p>
+                        <p class="text-capitalize my-1">"Capture the beauty of nature and showcase your garden's
+                            splendor lens of creativity with our garden photography and art inspiration."</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12">
+                    <div class="card p-2 text-center">
+                        <img src="../Images/service 8.png" width="100%" height="200px" alt="">
+                        <p class="text-capitalize my-1 fs-5 fw-bold">
+                            Kids' Gardening Activities</p>
+                        <p class="text-capitalize my-1">"Nurture young minds and sow the seeds of curiosity engaging
+                            kids' gardening activities that cultivate a lifelong love for nature."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!------------services ends  -->
+
+
+    <!------------New products  -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <div class="text-center title">
+                <h2 class="position-relative d-inline-block text-uppercase">newly products</h2>
+            </div>
+            <div class="products-list row g-0 py-3" data-aos="zoom-in-up">
+                <div class="col-md-6 col-lg-3 col-sm-12 p-2">
+                    <div class="products-img position-relative overflow-hidden">
+                        <img src="../Images/spider-plant.jfif" class="w-100" height="200px" alt="">
+                        <span class="position-absolute text-danger"> <i class="fa fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1 fw-bolder">spider-plant</p>
+                        <span class="fw-bold d-block">$45.00</span>
+                        <a href="#" class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#cart-1">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 col-sm-12 p-2">
+                    <div class="products-img position-relative overflow-hidden">
+                        <img src="../Images/berries.jfif" class="w-100" height="200px" alt="">
+                        <span class="position-absolute text-danger"> <i class="fa fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1 fw-bolder">berries</p>
+                        <span class="fw-bold d-block">$45.00</span>
+                        <a href="#" class="btn btn-success mt-3"data-bs-toggle="modal" data-bs-target="#cart-1">Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 col-sm-12 p-2">
+                    <div class="products-img position-relative overflow-hidden">
+                        <img src="../Images/Hedera_helix_Dover.jpg" class="w-100" height="200px" alt="">
+                        <span class="position-absolute text-danger"> <i class="fa fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1 fw-bolder">Hedera_helix_Dover</p>
+                        <span class="fw-bold d-block">$45.00</span>
+                        <a href="#" class="btn btn-success mt-3"data-bs-toggle="modal" data-bs-target="#cart-1">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-12 p-2">
+                    <div class="products-img position-relative overflow-hidden">
+                        <img src="../Images/peace lily.webp" class="w-100" height="200px" alt="">
+                        <span class="position-absolute text-danger"> <i class="fa fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1 fw-bolder">peace lily</p>
+                        <span class="fw-bold d-block">$45.00</span>
+                        <a href="#" class="btn btn-success mt-3"data-bs-toggle="modal" data-bs-target="#cart-1">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!------------New products  -->
+
+
+    <!------------About section  -->
+    <section id="about" class="py-3" data-aos="zoom-in-down">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block text-uppercase">about us</h2>
+            </div>
+            <div class="row py-5">
+
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="pt-1 pb-2">
+
+                        <p class="lead">Welcome to Plant Palace, your one-stop-shop for all things plants! We are
+                            passionate about providing plant enthusiasts with a platform to purchase different types of
+                            plants and learn more about them</p>
+                        <p class="lead">Our website offers a wide range of features, including the ability to browse and
+                            purchase plants, read detailed descriptions about each plant, and view customer reviews.
+                        </p>
+                        <p class="lead">At Plant Palace, we believe that everyone should have access to beautiful and
+                            healthy plants. That's why we take pride in sourcing our plants from trusted growers and
+                            nurseries to ensure their quality and longevity.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="../Images/bckgd.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------About section  -->
+
+    <!----------contact us section  -->
+    <section id="Feedback" class="contact py-5 bg-light" data-aos="zoom-in-up">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block text-uppercase">Feedback </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <form class="row g-3">
+                        <div class="col-md-12 col-lg-12">
+                            <h3 class="text-center">Feedback form </h3>
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter Your Name"
+                                required>
+                        </div>
+                        <div class="col-md-12 col-lg-12">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Enter Your Email"
+                                required>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12">
+                            <label for="inputSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="inputSubject" placeholder="Enter Subject">
+                        </div>
+                        <div class="col-md-12 col-lg-12">
+                            <label for="inputMessage" class="form-label">Message</label>
+                            <textarea name="msg" id="msg" class="form-control" placeholder="Write your message"
+                                cols="30" rows="4" style="resize: none;"></textarea>
+                        </div>
+
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary" >Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 p-4">
+
+                    <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                        <div id="display-google-map" style="height:100%; width:100%;max-width:100%;"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28960.381580757094!2d66.9997271082461!3d24.862220475989986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e6b15d5cedb%3A0x5d39d381dac29ad8!2sAPWA%20Complex!5e0!3m2!1sen!2sus!4v1691654935023!5m2!1sen!2sus"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div><a
+                            class="code-for-google-map" href="https://www.bootstrapskins.com/themes"
+                            id="make-map-infor-mation">premium bootstrap themes</a>
+                        <style>
+                            #display-google-map img {
+                                max-height: none;
+                                max-width: none !important;
+                                background: none !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------contact us section  -->
+
+    <!---------------modal start  -->
+    
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="" id="" placeholder="Enter Email" required>
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" name="" class="form-control" placeholder="Password" id="" required>
+                        <button type="submit" class=" mt-3" style="color: white; background-color: green; border: 0; border-radius: 8px; padding: 10px 20px;" >LogIn</button>
+                    </form>
+                </div>
+                ]
+            </div>
+        </div>
+    </div>
+    <!---------------modal end  -->
+    <!---------------modal start  -->
+    
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" name="" id="" placeholder="Enter Name" required>
+                        <label for="number" class="form-label">Contact Number:</label>
+                        <input type="number" class="form-control" name="" id="" placeholder="Enter Phone Number" required>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="" id="" placeholder="Enter Email" required>
+                        <label for="password" class="form-label">New Password</label>
+                        <input type="password" name="" class="form-control" placeholder="Password" id="" required>
+                        <label for="password" class="form-label">Confirm-Password</label>
+                        <input type="password" name="" class="form-control" placeholder="Password" id="" required>
+                        <button type="submit" class=" mt-3" style="color: white; background-color: green; border: 0; border-radius: 8px; padding: 10px 20px;" >SignUp</button>
+                    </form>
+                </div>
+                ]
+            </div>
+        </div>
+    </div>
+    <!---------------modal end  -->
+
+    <!-------------- modal start  -->
+    <div class="modal fade" id="cart-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add To Cart Purchase</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="" class="form-label">Name:</label>
+              <input type="text" class="form-control" name="" id="" placeholder="Enter Your Name">
+              <label for="">Card Number:</label>
+              <input type="number" class="form-control" name="" id="" placeholder="Enter you Card Number">
+              <label for="">Pin Code</label>
+              <input type="number" class="form-control" name="" id="">
+              <label for="">Card Expiry</label>
+              <input type="date" class="form-control" name="" id="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-------------- modal end  -->
+
+    <!----------footer starts  -->
+    <footer class="bg-success py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-4">
+                    <img src="../Images/logo.png" width="80px" height="80px" class="img-fluid rounded-circle" alt="">
+                    <h5 class="fs-3 pt-3 text-white text-uppercase">Plant-Palace</h5>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 text-start">
+                    <p class="fs-4"><b style="font-family: 'Kaisei Tokumin', serif; letter-spacing: 2px;">Contact Us</b></p>
+                    <p class="text-white"><i class="fas fa-map-marked-alt text-dark" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; APWA COMPLEX, West
+                        Garden Karachi</p>
+                    <p class="text-white"><i class="fa fa-phone text-dark" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; +92-3318115412</p>
+                    <p class="text-white"><i class="fa fa-envelope text-dark" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; plant-palace@gmail.com</p>
+                </div>
+                <div class="col-md-4 col-lg-4 col-12 mt-4 text-start">
+                    <p ><b style="font-family: 'Kaisei Tokumin', serif; letter-spacing: 2px;">Subcribe Newsletter</b></p>
+                    <input type="email" class="form-control" placeholder="Your Email">
+                    <button type="button" class="btn btn-primary mt-4">Subscribe</button>
+                </div>
+            </div>
+            <hr class="text-white">
+            <div class="text-center">
+                <p class="text-white">&copy; All Rights || Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!----------footer ends  -->
+
+    <!--------scroll to top button  -->
+    <div class="scrollTo" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo(0, 0)
+        }
+    </script>
+    <!--------scroll to top button  -->
+   
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!------- jQuery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous">
+    </script>
+
+    <!------code for categories  -->
+    <script>
+        $(document).ready(function () {
+            $("#all").click(function () {
+                $("#indoor-box").show()
+                $("#outdoor-box").show()
+                $("#flowring-box").show()
+                $("#succulent-box").show()
+            })
+        })
+        $(document).ready(function () {
+            $("#i-plant").click(function () {
+                $("#indoor-box").show()
+                $("#outdoor-box").hide()
+                $("#flowring-box").hide()
+                $("#succulent-box").hide()
+            })
+        })
+        $(document).ready(function () {
+            $("#o-plant").click(function () {
+                $("#indoor-box").hide()
+                $("#outdoor-box").show()
+                $("#flowring-box").hide()
+                $("#succulent-box").hide()
+            })
+        })
+        $(document).ready(function () {
+            $("#flowring").click(function () {
+                $("#indoor-box").hide()
+                $("#outdoor-box").hide()
+                $("#flowring-box").show()
+                $("#succulent-box").hide()
+            })
+        })
+        $(document).ready(function () {
+            $("#succulent").click(function () {
+                $("#indoor-box").hide()
+                $("#outdoor-box").hide()
+                $("#flowring-box").hide()
+                $("#succulent-box").show()
+            })
+        })
+    </script>
+
+    <!-- Animation On Scroll  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 55,
+            duration: 1200,
+        });
+    </script>
+
+    <!-----------for searching filter  -->
+    <script>
+        function searchplant(){
+    var inp = document.getElementById('search').value;
+   
+    if(inp == "Indoor Plants" || inp == "indoor plant" || inp == "indoor plants" || inp == "INDOOR PLANTS" || inp == "indoor" || inp == "Indoor" || inp == "INDOOR")
+    {
+        window.location.href="index.html#indoorplants"
+    }
+    else if(inp == "Outdoor Plants" || inp == "outdoor plant" || inp == "Outdoor" || inp == "outdoor plants" || inp == "OUTDOOR PLANTS" || inp == "outdoor" || inp == "OUTDOOR")
+    {
+        window.location.href="index.html#outdoorplants"
+    }
+    else if(inp == "Flowering Plants" || inp == "flowering plant" || inp == "flowering" || inp == "FLOWERING PLANTS" ||  inp == "Flowering")
+    {
+        window.location.href="index.html#floweringplants"
+    }
+    else if(inp == "Succulent Plants" || inp == "succulent plants" || inp == "succulent plant" || inp == "SUCCULENT PLANTS" ||  inp == "succulent" || inp == "succulents")
+    {
+        window.location.href="index.html#succulentplants"
+    }
+    else
+    {
+        alert('We Could not find this Category')
+    }
+}
+    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $.ajax({
+                    url:"data.json",
+                    type:"GET",
+                    success:function(data){
+                        console.log(data.Common_name)
+                        $('#Description').append(data.Description)
+                    }
+                })
+        </script>
+        
+</body>
+
+</html>

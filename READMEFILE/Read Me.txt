@@ -1,0 +1,29 @@
+
+
+Admin Email : admin	
+Admin Password: admin
+Filter work done in product page
+search work done in product and home page
+contact us work done via email sending
+hosted link:- https://techwizards.azfamtech.com/
+
+
+
+Route List:-
+ /homepage
+/Signup = Signup
+/signin = signin
+/Categories = indoor-plant,outdoor-plant,Flowering and succulent plant
+/Sevices = plant Sales,Community forms,Online Plants Care Resources,Gardening Tips and advice.
+/New products = Spider-plant, Berries, Hedera-helix-dover, Peace-lily
+/admindashboard = admindashboard (without login not access)
+/products = show products in admin dashboard
+/contact-us = Through Email or Google Map
+/about us = about us
+/ordercomplete = all order completed in admin dashboard
+/allproduct = all products in user site
+/Feedback
+/JASON = We used jason to get information and details of plants.
+we used jason on Bonsai to get the infomation and other model boxes have their information in their
+Hard code. So open our website on live server because we had jason file , otherwise it shows error!
+  
